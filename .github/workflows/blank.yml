@@ -1,0 +1,19 @@
+name: Fetch GeoLite2
+on:
+  schedule:
+    - cron: "21 19 * * *"
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Fetch GeoLite2 Files
+        run: bash geolite2.sh
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dist/*
