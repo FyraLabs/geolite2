@@ -15,7 +15,10 @@ jobs:
         run: ./geolite2.sh
         env:
           MAXMIND_LICENSE_KEY: ${{ secrets.MAXMIND_LICENSE_KEY }}
+      - name: Get Timestamp
+        run: echo "TIMESTAMP=$(date +%s)" >> $GITHUB_ENV
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           files: dist/*
+          tag_name: ${{ env.TIMESTAMP }}
