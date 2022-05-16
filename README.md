@@ -13,7 +13,7 @@ Want to get up and running quick? Go ahead and grab one of the databases from th
 Or use a direct link, perfect for scripting and containers.
 
 <details>
-<summary>Links</summary>
+<summary>Click me!</summary>
 
 - [GeoLite2-ASN-Blocks-IPv4.csv](https://github.com/FyraLabs/geolite2/releases/latest/download/GeoLite2-ASN-Blocks-IPv4.csv)
 - [GeoLite2-ASN-Blocks-IPv6.csv](https://github.com/FyraLabs/geolite2/releases/latest/download/GeoLite2-ASN-Blocks-IPv6.csv)
